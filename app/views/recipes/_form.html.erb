@@ -1,0 +1,7 @@
+ <%= form_for filler do |f| %>
+  
+  <%= f.text_field :name %>
+  <%= f.collection_check_boxes :ingredient_ids, @all, :id, :name %>
+
+<%= f.submit %>
+<% end %>
